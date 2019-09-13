@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<header>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet"> 
+    <title>
+        One love
+    </title>
+
+    <style type="text/css" media="screen">
+        body {
+            padding: 100px 0;
+            background-color: white;
+        }
+
+        p{
+            font-size: 30pt;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        #text_message{
+            position: relative;
+            margin: 0 auto;
+            width: 60em;
+            text-align: center;
+        }
+
+        #heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            animation: heartbeat 1s infinite;
+            margin: 0 auto
+        }
+
+        #heart:before,
+        #heart:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: #c33;
+            -moz-border-radius: 50px 50px 0 0;
+            border-radius: 50px 50px 0 0;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform-origin: 0 100%;
+            -moz-transform-origin: 0 100%;
+            -ms-transform-origin: 0 100%;
+            -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+        }
+
+        #heart:after {
+            left: 0;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transform-origin: 100% 100%;
+            -moz-transform-origin: 100% 100%;
+            -ms-transform-origin: 100% 100%;
+            -o-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+        }
+
+
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(.75);
+            }
+
+            20% {
+                transform: scale(1);
+            }
+
+            40% {
+                transform: scale(.75);
+            }
+
+            60% {
+                transform: scale(1);
+            }
+
+            80% {
+                transform: scale(.75);
+            }
+
+            100% {
+                transform: scale(.75);
+            }
+        }
+    </style>
+</header>
+
+<body>
+    <div id="heart"></div>
+    <div id="text_message">
+    <p>Экранчик при запуске</p>
+    <img src='Снимок экрана от 2019-09-13 12-14-34.png'>
+    <p>Выбираем язык системы и раскладки клавиатуры</p>
+    <img src='Снимок экрана от 2019-09-13 12-16-39.png'>
+    <p>Выбираем вариант с окружением GNOME</p>
+    <img src='Снимок экрана от 2019-09-13 12-17-51.png'>
+    <p>Разметка диска для ОС</p>
+    <img src='Снимок экрана от 2019-09-13 12-18-13.png'>
+    <p>Обзор выбранных параметров</p>
+    <img src='Снимок экрана от 2019-09-13 12-18-35.png'>
+    <p>Добавление суперпользователя и пользователя</p>
+    <img src='Снимок экрана от 2019-09-13 12-23-33.png'>
+    </div>
+</body>
+
+</html>
